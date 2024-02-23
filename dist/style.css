@@ -1,0 +1,107 @@
+html {
+        background-image: url("../src/assets/jackson-hendry-eodA_8CTOFo-unsplash.jpg");
+        /* Outras propriedades opcionais */
+        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+        /* background-position: center; (opcional) centraliza a imagem */
+        font-family: "Poppins", sans-serif;
+        padding-top: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input[type="text"] {
+    background-color: rgb(229, 229, 229);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+#submit {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+}
+
+#submit {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+#submit:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  #submit:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+
+#submit {
+    background-color: darkslateblue;
+    width: fit-content;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+#weather {
+    background-color: rgb(229, 229, 229);
+    padding: 7px 20px 7px 20px;
+    border-radius: 10px;
+}
